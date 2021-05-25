@@ -14,7 +14,7 @@ function callPythonScript(req, res) {
   const {spawn} = require("child_process");
   console.log("\n\n\nBeginning Summarization\n\n\n\n");
     
-  var python = spawn('python',["./scripts/testing.py",
+  var python = spawn('python',["./scripts/inference.py",
       name] );
 
   python.stdout.on('data', (data) => {
