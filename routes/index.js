@@ -10,6 +10,7 @@ function callPythonScript(req, res) {
       
   const { name } = req.body;
 
+  try{
   const {spawn} = require("child_process");
   console.log("\n\n\nBeginning Summarization\n\n\n\n");
     
@@ -26,6 +27,11 @@ function callPythonScript(req, res) {
   python.stderr.on('data', (data) => {
     res.json( {summary : data.toString()} );
   });
+}
+catch(err)
+{
+  res.json({summary : err.toString()});
+}
   
 }
 
