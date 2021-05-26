@@ -9,6 +9,7 @@
     "@fortawesome/fontawesome-free": "5.14.0",
     "@popperjs/core": "2.5.1",
     "@tailwindcss/custom-forms": "0.2.1",
+    "algorithmia": "^0.3.10",
     "chart.js": "2.9.3",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",

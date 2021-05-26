@@ -19,7 +19,7 @@ export default function Profile() {
   }
 
   const submitForm = () => {
-    fetch('https://callscriptpython.herokuapp.com//api', {
+    fetch('/api', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -1,4 +1,5 @@
 var express = require('express');
+var Algorithmia= require("algorithmia");
 var router = express.Router();
 
 /* GET home page. */
@@ -8,10 +9,11 @@ router.get('/', function(req, res, next) {
 
 function callPythonScript(req, res) {
       
-  const { name } = req.body;
+  //const { name } = req.body;
 
   try{
-  const {spawn} = require("child_process");
+  /*
+    const {spawn} = require("child_process");
   console.log("\n\n\nBeginning Summarization\n\n\n\n");
     
   var python = spawn('python',["./scripts/inference.py",
@@ -27,6 +29,13 @@ function callPythonScript(req, res) {
   python.stderr.on('data', (data) => {
     res.json( {summary : data.toString()} );
   });
+  */
+    Algorithmia.client("simI6AZVARfiyUQPGk4cz/A5gtE1")
+    .algo("SakshiTantak/summarizer_inference/0.2.0?timeout=300")
+    .pipe(input)
+    .then(function(response){
+      res.json({summary: response.toString()});
+  });
 }
 catch(err)
 {
@@ -37,6 +46,23 @@ catch(err)
 
 // -------- Add This
 // 1. * GET Test. */
-router.post("/api", callPythonScript);
+router.post("/api", function(req,res, next)
+{
+  const { name } = req.body;
+
+  try{
+  Algorithmia.client("simI6AZVARfiyUQPGk4cz/A5gtE1")
+    .algo("SakshiTantak/summarizer_inference/0.2.0?timeout=300")
+    .pipe(name)
+    .then(function(response){
+      console.log(response.result);
+      res.json({summary: response.result.toString()});
+  });
+  }
+  catch(err)
+  {
+    res.json({summary: err.toString()});
+  }
+});
 
 module.exports = router;
