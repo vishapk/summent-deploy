@@ -69,7 +69,7 @@ export default function Landing() {
                   <div className="px-4 py-5 flex-auto">
                     <h6 className="text-xl font-semibold">Why use Summent?</h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                        Almost 80% of technical information is exlusive to  patents but they
+                        Almost 80% of modern technical information is exclusive to  patents but they
                         are an often overlooked ocean of knowledge that can be explored easily with Summent.  
                     </p>
                   </div>
@@ -81,9 +81,9 @@ export default function Landing() {
                   <div className="px-4 py-5 flex-auto">                    
                     <h6 className="text-xl font-semibold">Why abstract summary?</h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                       Abstract summarization condenses information from the
-                       original document into a novel summary with a different construct that 
-                       is easier to understad from a reader's perspective.
+                       Abstractive summarization condenses information from the
+                       original document into a novel summary with an different construct that 
+                       is easier to read and understand.
 
                     </p>
                   </div>
@@ -95,8 +95,8 @@ export default function Landing() {
                   <div className="px-4 py-5 flex-auto">
                     <h6 className="text-xl font-semibold">How is it done?</h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Summent uses Google's Pegasus, Sequence-to-Sequence architecture 
-                      which has achieved State-of-the-Art results in text summarization. 
+                      Summent uses Google's Pegasus, a Sequence-to-Sequence architecture 
+                      which has achieved State-of-the-Art results in abstractive text summarization. 
                     </p>
                   </div>
                 </div>
@@ -112,8 +112,8 @@ export default function Landing() {
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold">Meet us</h2>
                 <p className="text-lg leading-relaxed m-4 text-gray-600">
-                  We are students of Pune Institute of Computer Technology who are
-                  currently completing this project and hope to bring it to you soon.
+                  We are students of Pune Institute of Computer Technology who have
+                  developed this product as our capstone project.
                 </p>
               </div>
             </div>
