@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // components
 
 import SummarizeDropdown from "./SummarizeDropdown.js";
-
+import SummarizeDropdown2 from "./SummarizeDropdown2.js";
 
 
 export default function Navbar(props) {
@@ -19,7 +19,7 @@ export default function Navbar(props) {
                 SUMMENT
               </h1>
             <button
-              className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
@@ -36,7 +36,11 @@ export default function Navbar(props) {
             <ul className="flex flex-col lg:flex-row list-none mr-auto">
               <li className="flex items-center">
                   <i className="lg:text-white text-white far fa-file-alt text-lg leading-lg mr-2" />{" "}
-                  <SummarizeDropdown />
+                  <span>
+                  <SummarizeDropdown2 />
+                  </span>
+                  <i className="lg:hidden fas fa-chevron-down" />
+                  <SummarizeDropdown />                  
               </li>
             </ul>
 
@@ -48,8 +52,9 @@ export default function Navbar(props) {
                   href="https://github.com/vishapk/beproject"
                   target="_blank"
                 >
-                  <i className="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg " />
-                  <span className="lg:hidden inline-block ml-2">Star</span>
+                  <span className="lg:hidden inline-block ml-2 zoom">&nbsp;&nbsp;Source Code&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <i className="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg" />
+                  
                 </a>
               </li>
             </ul>
