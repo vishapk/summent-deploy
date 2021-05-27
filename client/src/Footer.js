@@ -34,7 +34,7 @@ export default function Footer() {
                 <button
                   className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
-                ><a href="https://www.facebook.com/vishap.kanwar.1">
+                ><a href="https://www.facebook.com/vishap.kanwar.1" target="blank">
                   <i className="fab fa-facebook-square"></i>
                   </a>
                 </button>
@@ -42,7 +42,7 @@ export default function Footer() {
                 <button
                   className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
-                ><a href="https://github.com/vishapk">
+                ><a href="https://github.com/vishapk" target="blank">
                   <i className="fab fa-github"></i>
                   </a>
                 </button>
@@ -58,7 +58,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.sakshitantak.ml/"
+                        href="https://www.sakshitantak.ml/" target="blank"
                       >
                         Blog
                       </a>
@@ -66,7 +66,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.github.com/creativetimofficial?ref=nr-footer"
+                        href="https://www.github.com/creativetimofficial?ref=nr-footer" target="blank"
                       >
                         Github
                       </a>
