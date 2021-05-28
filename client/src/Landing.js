@@ -32,7 +32,7 @@ export default function Landing() {
                     About Summent
                   </h1>
                   <p className="mt-4 text-lg text-gray-300">
-                    Summent is an online tool that automatically generates abstractive summaries 
+                    Summent is an online tool that automatically generates abstract summaries 
                     from patent documents using breakthrough machine learning techniques such  as
                     Sequence-to-Sequence learning.
                   </p>
@@ -70,7 +70,7 @@ export default function Landing() {
                     <h6 className="text-xl font-semibold">Why use Summent?</h6>
                     <p className="mt-2 mb-4 text-gray-600">
                         Almost 80% of modern technical information is exclusive to  patents but they
-                        are an often overlooked ocean of knowledge that can be explored easily with Summent.  
+                        remain an often overlooked ocean of knowledge that can be explored easily with Summent.  
                     </p>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export default function Landing() {
                     <h6 className="text-xl font-semibold">Why abstract summary?</h6>
                     <p className="mt-2 mb-4 text-gray-600">
                        Abstractive summarization condenses information from the
-                       original document into a novel summary with an different construct that 
+                       original document into a novel summary with a different construct that 
                        is easier to read and understand.
 
                     </p>
