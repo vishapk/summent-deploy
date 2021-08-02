@@ -68,7 +68,7 @@ export default function Footer() {
                         className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                         href="https://www.github.com/creativetimofficial?ref=nr-footer"
                       >
-                        Github
+                        CSS Github 
                       </a>
                     </li>
                   </ul>

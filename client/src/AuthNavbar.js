@@ -45,7 +45,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   className="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://github.com/vishapk/beproject"
+                  href="https://github.com/vishapk/summent-deploy"
                   target="_blank"
                 >
                   <i className="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg " />
